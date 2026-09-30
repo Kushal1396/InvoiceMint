@@ -5,7 +5,7 @@
     "main": "tailwind.config.js",
     "scripts": {
         "preview": "vite preview",
-        "build": "vite build",
+        "build": "npx vite build",
         "dev": "vite"
     },
     "keywords": [],
