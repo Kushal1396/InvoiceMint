@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <!-- Web3 Blue Gradient -->
+    <linearGradient id="primary" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#1e3a8a" />
+    </linearGradient>
+    
+    <!-- Fresh Mint Gradient -->
+    <linearGradient id="accent" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+
+    <filter id="shadow" x="-5%" y="-5%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#020617" flood-opacity="0.30" />
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" fill="transparent" />
+
+  <!-- Blue Background Receipt -->
+  <path d="M 120 140 C 120 110, 140 90, 170 90 L 320 90 C 350 90, 370 110, 370 140 L 370 380 L 290 340 L 205 380 L 120 340 Z" fill="url(#primary)" />
+  
+  <!-- Mint Green Foreground Receipt -->
+  <path d="M 190 190 C 190 160, 210 140, 240 140 L 390 140 C 420 140, 440 160, 440 190 L 440 430 L 360 390 L 275 430 L 190 390 Z" fill="url(#accent)" filter="url(#shadow)" />
+  
+  <!-- Minimalist Text/Lines in Front Receipt -->
+  <rect x="235" y="200" width="140" height="24" rx="12" fill="#ffffff" opacity="0.95" />
+  <rect x="235" y="250" width="160" height="18" rx="9" fill="#ffffff" opacity="0.6" />
+  <rect x="235" y="290" width="110" height="18" rx="9" fill="#ffffff" opacity="0.6" />
+  <circle cx="395" cy="212" r="16" fill="#ffffff" opacity="0.8" />
+  
+  <!-- Bottom Total Line -->
+  <rect x="320" y="340" width="75" height="18" rx="9" fill="#ffffff" opacity="0.95" />
+</svg>

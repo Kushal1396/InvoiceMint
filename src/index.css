@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@layer base {
+    html {
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Remove number input spinners for cleaner look */
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input[type="number"] {
+        -moz-appearance: textfield;
+        appearance: textfield;
+    }
+}
+
+/* Print stylesheet — show only the preview panel */
+@media print {
+    body {
+        background: white !important;
+    }
+
+    header,
+    nav,
+    footer,
+    .print\\:hidden {
+        display: none !important;
+    }
+
+    main {
+        display: block !important;
+    }
+
+    section {
+        width: 100% !important;
+        overflow: visible !important;
+        padding: 0 !important;
+    }
+}
